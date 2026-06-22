@@ -1,7 +1,6 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
-import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 import { generateCaption } from "./src/lib/gemini.ts";
 import { getSupabase } from "./src/lib/supabase.ts";
@@ -14,8 +13,7 @@ const app = express();
 const PORT = 3000;
 
 // Set up directory variables for ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = path.resolve();
 
 // Support large image payloads (for base64 carousel slides)
 app.use(express.json({ limit: "50mb" }));
