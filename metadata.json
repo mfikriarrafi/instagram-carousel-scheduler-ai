@@ -1,0 +1,6 @@
+{
+  "name": "Instagram Carousel Auto-Scheduler",
+  "description": "An elegant full-stack dashboard to schedule multi-slide card carousels, auto-generate captions using Gemini, monitor publishing logs, and auto-refresh Instagram Graph API tokens.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
